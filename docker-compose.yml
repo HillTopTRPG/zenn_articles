@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  zenn-cli:
+    build: ./cli
+    container_name: zenn-cli
+    working_dir: /zenn/cli
+    tty: true
+    ports:
+      - '8000:8000'
+    volumes:
+      - './cli:/zenn/cli'
+#    env_file:
+#      - cli/.env
+#    command:
+#      - bash
+#      - -c
+#      - |
+#        echo "Launching aws-tools"
+#        sleep infinity
+#    environment:
+#      AWS_DEFAULT_REGION: ap-northeast-1
+#      AWS_DEFAULT_OUTPUT: yaml
+#  client:
+#    build: ./client
+#    container_name: waddlefy-client
+#    working_dir: /app/waddlefy
+#    tty: true
+#    ports:
+#      - "82:82"
+#      - "83:83"
+#      - "6006:6006"
+#    volumes:
+#      - './client:/app/waddlefy'
+#    command: bash -c "npm i --force && npm run dev"
+#    logging:
+#      driver: "json-file"
+#      options:
+#        max-size: "10m"
+#        max-file: "3"
