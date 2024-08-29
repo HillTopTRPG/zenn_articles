@@ -1,5 +1,5 @@
 ---
-title: "Redux、はじめました #0"
+title: "Redux はじめました #0"
 emoji: "🤩"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Docker", "Vite", "React", "TypeScript", "Redux"]
