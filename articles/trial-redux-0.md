@@ -157,7 +157,7 @@ docker-compose.yml が編集できたらコンテナを立ち上げ直して反�
 exit
 # ホストPCに戻ってきたのでコンテナを停止
 docker compose stop
-# 起動し直してコンテナに入り直す
+# 起動し直して再度コンテナに入る
 docker compose up -d
 docker compose exec frontend bash
 ```
@@ -177,15 +177,15 @@ npm run dev
 
 ```
 
-出力からわかる通り、コンテナ内では5173番ポートで公開されています。  
-```json:これは ./frontend/package.json の設定に起因している
+出力の通り、Dockerコンテナ内では5173番ポートで公開されています。  
+```json:これは ./frontend/package.json の設定のおかげ
   "scripts": {
     "dev": "vite --host --port 5173",
 ```
 
 そして、docker composeのポートフォワードによって82番ポートに紐付けられています。
 
-```yml:これは ./docker-compose.yml の設定に起因している
+```yml:これは ./docker-compose.yml の設定のおかげ
    ports:
      - "82:5173"
 ```
@@ -205,7 +205,8 @@ http://localhost:82/
   - `docker compose ps` で `PORTS` の列を確認する
 :::
 
-### 2-5. コンテナ起動時にローカルサーバーを起動するようにする
+### 2-5. コンテナ起動時に自動的にローカルサーバーを起動するようにする
+
 
 1-2 で作成した ./docker-compose.yml の②の部分をコメントインします。
 
@@ -246,18 +247,16 @@ docker compose up -d
 npm run dev
 ```
 
-![](/images/trial-redux-0/vite-react-ts-init.png)
+![](/images/trial-redux-0/01-vite-react-ts-init.png)
 *コンテナ起動後、すぐに（少し待つ）http://localhost:82/ にアクセスして表示を確認できるようになった*
 
 ## 3. Redux
 
-基本的には公式情報に従えば問題なし
+基本的には公式情報（わかりやすかった）に従えば問題なかったです。
 
 https://redux.js.org/tutorials/quick-start#usage-summary
 
-公式情報がとても丁寧に書いてあるのでリンク先を見てもらえば十分ですが、  
 現在時点で実際にどうやったのかを下記に残しておきます。
-
 ※ 拡張子は js となっているものは適宜 ts や tsx に読み換えて実施しました
 
 ```sh
@@ -274,7 +273,7 @@ export default configureStore({
 
 ```
 
-ストアのスコープとなるコンポーネントをProviderコンポーネントでラップします。
+ストアのスコープとなるコンポーネントをProviderコンポーネント（ストアを参照）で囲います。
 ```diff tsx:./frontend/src/main.tsxを編集
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -293,7 +292,7 @@ createRoot(document.getElementById('root')!).render(
 )
 
 ```
-上記のような実装から、Reduxはデザインパターンで言うところのプロバイダパターンで実装されていることがわかります。
+上記の書きっぷりから、Reduxはデザインパターンで言うところのプロバイダパターンで実装されていることがわかります。
 
 https://zenn.dev/morinokami/books/learning-patterns-1/viewer/provider-pattern
 
