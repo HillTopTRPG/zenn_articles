@@ -101,7 +101,7 @@ Qiitaでは `3fbf896a7cf8d0ee6231` なのがお分かりいただけると思い
 
 ```yml:started-zenn.md
 ---
-title: "Zenn、はじめました"
+title: "Zenn はじめました"
 emoji: "🐣" # アイキャッチとして使われる絵文字（1文字だけ）
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Zenn"]
@@ -113,7 +113,7 @@ published: true # 公開設定（falseにすると下書き）
 
 ```yml:started-qiita.md
 ---
-title: Qiita、はじめました
+title: Qiita はじめました
 tags:
   - Qiita
 private: false # true: 限定共有記事 / false: 公開記事
