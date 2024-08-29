@@ -3,7 +3,8 @@ title: "Redux、はじめました #0"
 emoji: "⚖️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Docker", "Vite", "React", "Redux"]
-published: false
+published: true
+published_at: 2024-08-30 09:10
 ---
 
 ## Redux はじめました #0
