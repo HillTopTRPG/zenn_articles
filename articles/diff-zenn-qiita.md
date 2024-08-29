@@ -3,7 +3,7 @@ title: "Zenn vs Qiita 書きやすさ比較"
 emoji: "⚖️"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["Zenn", "Qiita"]
-published: false
+published: true
 ---
 
 # Zenn vs Qiita 書きやすさ比較
