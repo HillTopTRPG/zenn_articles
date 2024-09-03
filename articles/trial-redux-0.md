@@ -587,3 +587,10 @@ export function Counter() {
 
 無事にReduxを導入でき、最も基本的な状態管理の機能を体感することができました。  
 非同期処理(API呼び出しなど)を伴う状態管理やその他Reduxならではの強力な機能については、また別の機会にやってみようと思います。
+
+## 次回
+
+[2024/09/03 追記]
+やっぱGitHubで管理することにしました。
+
+https://zenn.dev/hilltop/articles/trial-redux-1
