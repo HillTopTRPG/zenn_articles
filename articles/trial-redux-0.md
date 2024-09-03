@@ -383,7 +383,7 @@ export function Counter() {
 早速追加してみます。  
 コンポーネントを跨いで値が保持されていることを確認するために２つ追加してみます。
 
-```diff ./frontend/src/App.tsx
+```diff tsx:./frontend/src/App.tsx
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
