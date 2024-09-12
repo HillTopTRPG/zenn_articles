@@ -66,7 +66,7 @@ https://qiita.com/hisashiyamaguchi/items/2d0bcae052077f6ae4a4
 （ドメインは任意の値も入力できたけど使い勝手がわからんのでデフォルト値にした）  
 備忘録では後の動作の確認のために、この段階ではあえて動作に必要な入力を省きます。
 
-## 2. React側
+## 2. Reactプロジェクトに設置
 
 ```sh:Auth0のReact向けパッケージをインストール
 docker compose run frontend npm i @auth0/auth-react
