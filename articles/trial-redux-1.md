@@ -155,4 +155,7 @@ Fast-forward
 
 ## 次回
 
-未定
+[2024/09/12 追記]
+Auth0のログイン画面を追加してみることにしました。
+
+https://zenn.dev/hilltop/articles/trial-auth0-0
