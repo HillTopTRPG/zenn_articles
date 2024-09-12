@@ -281,7 +281,7 @@ https://auth0.com/docs/quickstart/spa/react/interactive#configure-auth0
 ![](/images/trial-auth0-0/02-auth0-error.png)
 *おおっと？*
 
-コールバックURLを設定することでこの挙動は直りました。
+これはAuth0の `Allowed Callback URLs` の項目を設定することでこの挙動は直りました。
 
 ![](/images/trial-auth0-0/03-login-page-01.png)
 *いい感じです*
@@ -297,7 +297,7 @@ https://auth0.com/docs/quickstart/spa/react/interactive#configure-auth0
 ![](/images/trial-auth0-0/04-login-page-loading.png)
 *1分以上はこの状態。長いぞ？*
 
-これは許可されたWebオリジンを設定することで爆速になりました。
+これはAuth0の `Allowed Web Origins` の項目を設定することで爆速になりました。
 
 ## まとめ
 
