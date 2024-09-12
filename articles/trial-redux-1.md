@@ -13,6 +13,23 @@ https://zenn.dev/hilltop/articles/trial-redux-0
 
 ## Redux はじめました #1
 
+```mermaid
+%%{init:{
+    'gitGraph':{
+        'mainBranchName': 'Redux はじめました',
+        'rotateCommitLabel': true,
+        'showBranches': true
+}}}%%
+
+gitGraph
+  commit id: "trial-redux-0"
+  commit id: "trial-redux-1" type: HIGHLIGHT tag: "本記事"
+  branch "Auth0 はじめました"
+  commit id: "trial-auth0-0"
+  checkout "Redux はじめました"
+%%  merge "Auth0 はじめました" id: "aaa" type: NORMAL
+```
+
 やっぱGitHubリポジトリ作ります。  
 普段はソースを作る前にリポジトリを用意するのですが、今回は既にソースありきの状態でリモートリポジトリに登録していきます。  
 普段と違うリポジトリの用意の仕方なので、備忘録としての有用性が大！
@@ -130,7 +147,6 @@ Fast-forward
  1 file changed, 674 insertions(+)
  create mode 100644 LICENSE
 ```
-
 
 ## まとめ
 

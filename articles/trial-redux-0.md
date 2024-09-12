@@ -9,6 +9,23 @@ published_at: 2024-08-30 09:10
 
 ## Redux はじめました #0
 
+```mermaid
+%%{init:{
+    'gitGraph':{
+        'mainBranchName': 'Redux はじめました',
+        'rotateCommitLabel': true,
+        'showBranches': true
+}}}%%
+
+gitGraph
+  commit id: "trial-redux-0" type: HIGHLIGHT tag: "本記事"
+  commit id: "trial-redux-1"
+  branch "Auth0 はじめました"
+  commit id: "trial-auth0-0"
+  checkout "Redux はじめました"
+%%  merge "Auth0 はじめました" id: "aaa" type: NORMAL
+```
+
 Reduxを使ってみたい！  
 と言うことで `Hello World!` レベルのプロジェクトを作っていきます。
 
